@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./Layout.module.css";
 
-function layout({ children }) {
+function Layout({ children }) {
   return (
     <>
       <header className={styles.header}>
@@ -13,7 +13,7 @@ function layout({ children }) {
       <div className={styles.container}>{children}</div>
       <footer className={styles.footer}>
         Reference :
-        <a href="https://botostart.ir" targer="_blank">
+        <a href="https://botostart.ir" target="_blank">
           Botostart
         </a>
         Next.js courses | BotoCar Project &copy;
@@ -22,4 +22,4 @@ function layout({ children }) {
   );
 }
 
-export default layout;
+export default Layout;

@@ -19,12 +19,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <Layout className={`${geistSans.variable} ${geistMono.variable}`}>
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <Layout className={`${geistSans.variable} ${geistMono.variable}`}>
+          {children}
+        </Layout>
       </body>
     </html>
-    </Layout>
   );
 }
