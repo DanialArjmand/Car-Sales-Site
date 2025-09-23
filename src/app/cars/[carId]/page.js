@@ -1,3 +1,4 @@
+import CarsDetails from "../../../components/template/CarDetails";
 import CarsData from "../../../data/carsData";
 import { notFound } from "next/navigation";
 
@@ -9,13 +10,7 @@ function CarDetail({ params }) {
     return notFound();
   }
 
-  return (
-    <div>
-      <h1>{carDetails.name}</h1>
-      <p>Model: {carDetails.model}</p>
-      <p>Year: {carDetails.year}</p>
-    </div>
-  );
+  return <CarsDetails {...carDetails} />;
 }
 
 export default CarDetail;

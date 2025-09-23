@@ -4,7 +4,6 @@ import styles from "./Card.module.css";
 
 function Card(props) {
   const { id, name, model, year, distance, location, image, price } = props;
-  console.log(props);
 
   return (
     <Link href={`/cars/${id}`}>
@@ -14,9 +13,10 @@ function Card(props) {
         <p className={styles.detail}>{`${year} . ${distance}km`}</p>
         <div className={styles.footer}>
           <p>$ {price}</p>
-          <div className={styles.location}></div>
-          <p>{location}</p>
-          <Location />
+          <div className={styles.location}>
+            <p>{location}</p>
+            <Location />
+          </div>
         </div>
       </div>
     </Link>
