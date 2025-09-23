@@ -15,20 +15,23 @@ function Categories() {
         </div>
       </Link>
       <Link href="/categories/suv">
-      <div>
-        <p>SUV</p>
-        <Suv />
-      </div>
+        <div>
+          <p>SUV</p>
+          <Suv />
+        </div>
       </Link>
-      
-      <div>
-        <p>Hatchback</p>
-        <Hatchback />
-      </div>
-      <div>
-        <p>Sport</p>
-        <Sport />
-      </div>
+      <Link href="/categories/hatchback">
+        <div>
+          <p>Hatchback</p>
+          <Hatchback />
+        </div>
+      </Link>
+      <Link href="/categories/sport">
+        <div>
+          <p>Sport</p>
+          <Sport />
+        </div>
+      </Link>
     </div>
   );
 }
